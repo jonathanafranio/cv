@@ -1,0 +1,55 @@
+/* ======================================
+ *
+ FOOTER
+ *
+ ========================================
+ *# 1.0 Site footer
+ *# 1.1 Footer column
+ *# 2.0 Container copyright
+ *# 3.0 Media Queries
+ *--------------------------------------------------------------
+
+/* -------------------------------------------------------------
+ 1.0 Site footer
+ ------------------------------------------------------------- */
+.site-footer
+	display: inline-block
+	position: relative
+	color: $light-text
+	//margin: 40px 0 0 0
+	//padding-top: 20px]
+	background-color: $bg-footer
+	border-bottom: 2px solid #4a96d0
+	a
+		color: $light-text
+
+
+.container-copyright
+	padding: 10px 0 25px
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		&:before, &:after
+			display: none
+	p
+		@media screen and (max-width: 1023px)
+			display: inline-block
+			width: calc(100% - 40px)
+			margin: 0
+		@media screen and (min-width: 1024px)
+			display: inline-block
+			font-size: 1.4rem
+			color: $dark-text
+			//text-transform: uppercase
+
+
+#to-up
+	display: inline-block
+	width: 30px
+	border: none
+	padding: 0px
+
+.svg--hide
+	display: none

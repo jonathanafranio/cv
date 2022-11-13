@@ -1,0 +1,132 @@
+/* ======================================
+ *
+ HEADER
+ *
+ ========================================
+.no-scroll
+	overflow: hidden
+
+/* -------------------------------------------------------------
+ Site header
+ ------------------------------------------------------------- */
+.site-header
+	display: block
+	margin-bottom: 20px
+	z-index: 1000
+	position: relative
+	background: $bg-header
+	border-top: 8px solid $text-color
+	@media screen and (min-width: 1024px)
+		.container
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&:before, &:after
+				display: none
+
+	@media print
+		.container
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&:before, &:after
+				display: none
+
+.box-logo
+	margin-top: 10px
+	text-transform: uppercase
+	@media screen and (max-width: 1023px)
+		display: block
+		margin: 10px auto 0px
+	@media screen and (max-width: 1023px) and (min-width: 768px)
+		max-width: 200px
+	@media screen and (max-width: 767px)
+		max-width: 170px
+	@media screen and (min-width: 1024px)
+		display: inline-block
+		max-width: 190px
+
+	@media print
+		max-width: 170px
+
+	&__description
+		font-style: italic
+		font-weight: 700
+	a
+		display: block
+		font-size: 3.5rem
+		line-height: 3.5rem
+		color: inherit
+
+		@media print
+			font-size: 3rem
+			line-height: 3rem
+
+
+	img
+		display: inline-block
+		vertical-align: top
+
+.social
+	@media screen and (max-width: 1023px)
+		display: none
+	@media screen and (min-width: 1024px)
+		display: inline-block
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+		li
+			display: inline-block
+			width: 30px
+			margin-left: 10px
+		svg
+			width: 25px
+
+	@media print
+		display: inline-block
+		padding: 0px
+		margin: 0px
+		list-style-type: none
+		li
+			display: inline-block
+			width: auto
+			margin-left: 10px
+
+			&:first-child
+				//display: none
+
+			a
+				display: flex
+				
+		svg
+			width: 15px
+			margin-right: 5px
+
+	&__print
+		display: none
+		@media print
+			display: inline-block
+
+
+#nav-mobile-btn
+	@media print
+		display: none
+	@media screen and (min-width: 1024px)
+		display: none
+	@media screen and (max-width: 1023px)
+		display: block
+		vertical-align: top
+		width: 35px
+		padding: 0
+		position: absolute
+		left: 15px
+		top: 35px
+		background: transparent
+		border: none
+		cursor: pointer
+		.i-line
+			display: block
+			width: 35px
+			height: 4px
+			margin: 0 0 6px 0
+			background-color: $dark-text

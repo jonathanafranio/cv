@@ -1,0 +1,110 @@
+.title-home
+    margin: 30px auto
+    padding: 0
+    text-align: center
+    font-size: 2.6rem
+    font-weight: 500
+
+.section--home
+    display: flex
+    margin-bottom: 32px
+    padding-bottom: 32px
+    flex-wrap: wrap
+    justify-content: space-between
+    border-bottom: 1px solid #ccc
+    @media print
+        margin-bottom: 15px
+        padding-bottom: 15px
+
+    &:last-child
+        border-bottom: none
+    &:first-child
+        margin-top: 32px
+        @media print
+            margin-top: 0
+    &__h1
+        display: inline-block
+        margin-top: 0px
+        padding-top: 0px
+        font-size: 2rem
+        font-style: italic
+        @media screen and (max-width: 1023px)
+            width: 100%
+        @media screen and (min-width: 1024px)
+            width: 15%
+    &__text
+        display: inline-block
+        @media screen and (min-width: 1024px)
+            width: 100%
+        @media screen and (min-width: 1024px)
+            width: 80%
+        p
+            margin-top: 3px
+
+.job
+    display: flex
+    margin-bottom: 14px
+    flex-wrap: wrap
+    flex-direction: column
+    border-bottom:  1px solid #ccc
+    &:last-child
+        border-bottom: none
+        margin-bottom: 0
+        @media print
+            margin-bottom: 20px
+    h2, h3, h4
+        margin: 0px
+        padding: 0px
+        font-weight: 600
+    h2
+        font-size: 2rem
+    h3
+        font-style: italic
+        font-size: 1.8rem
+    h4
+        font-size: 1.6rem
+
+#trabalhos,
+#projetos
+    .section--home__text
+        > ul
+            list-style-type: none
+            padding-left: 0px
+            @media screen and (min-width: 1024px)
+                columns: 3
+
+            li
+                @media print
+                    display: inline-block
+                    margin-left: 10px
+
+
+.skills
+    display: flex
+    flex-wrap: wrap
+    list-style-type: none
+    
+    
+    &__item
+        display: inline-block
+        padding: 5px
+        border: 1px solid $dark-text
+        margin: 5px
+        border-radius: 8px
+
+        &:not(.-first)
+            color: $dark-text
+
+        &.-first
+            background-color: $dark-text
+            color: $main-color
+
+            &:after
+                content: ':'
+
+        &.-second
+            background-color: $dark-text
+            color: $main-color
+            
+            &:after
+                content: ':'
