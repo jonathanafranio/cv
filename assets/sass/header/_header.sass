@@ -68,19 +68,28 @@
 		vertical-align: top
 
 .social
-	@media screen and (max-width: 1023px)
-		display: none
+	padding: 0px
+	margin: 0px
+	list-style-type: none
+	li
+		display: inline-block
+		width: 30px
+		margin-left: 10px
+	svg
+		width: 25px
+
 	@media screen and (min-width: 1024px)
 		display: inline-block
-		padding: 0px
-		margin: 0px
-		list-style-type: none
-		li
+
+	@media screen and (max-width: 1023px)
+		display: none
+
+		.container-copyright &
 			display: inline-block
-			width: 30px
-			margin-left: 10px
-		svg
-			width: 25px
+			margin-bottom: 1.5rem
+
+			li:first-child
+				margin-left: 0
 
 	@media print
 		display: inline-block
@@ -91,9 +100,6 @@
 			display: inline-block
 			width: auto
 			margin-left: 10px
-
-			&:first-child
-				//display: none
 
 			a
 				display: flex
@@ -106,7 +112,6 @@
 		display: none
 		@media print
 			display: inline-block
-
 
 #nav-mobile-btn
 	@media print

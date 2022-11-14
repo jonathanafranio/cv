@@ -18,6 +18,8 @@
 
     &:last-child
         border-bottom: none
+        @media screen and (max-width: 1023px)
+            margin-bottom: 0px
     &:first-child
         margin-top: 32px
         @media print
@@ -83,7 +85,7 @@
     display: flex
     flex-wrap: wrap
     list-style-type: none
-    
+    padding-left: 0px
     
     &__item
         display: inline-block

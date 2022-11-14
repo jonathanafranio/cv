@@ -125,3 +125,14 @@
     .menu-nav-mobile
         transform: translateX(0)
         opacity: 1
+
+    .site-header
+        &:after
+            @media screen and (max-width: 1023px)
+                content: ''
+                width: 100vw
+                height: 100vh
+                position: fixed
+                background: rgba(0,0,0,0.6)
+                top: 0
+                left: 0
