@@ -64,6 +64,11 @@ body
 	color: $text-color
 	background: $bg-body
 	overflow-x: hidden
+
+	@media screen and (prefers-color-scheme: dark)
+		color: $bg-body
+		background: $text-color
+		
 	@media print
 		background: $light-main
 
@@ -234,6 +239,9 @@ h1, h2, h3, h4, h5, h6
 	padding: 15px 0 10px 0
 	font-family: $main-font
 	color: $text-color
+
+	@media screen and (prefers-color-scheme: dark)
+		color: $light-main
 
 h1
 	font-size: 3rem
@@ -445,6 +453,12 @@ a
 	&:active
 		color: $text-color
 		outline: 0!important
+
+	@media screen and (prefers-color-scheme: dark)
+		&:hover,
+		&:focus,
+		&:active
+			color: $light-main
 
 /*--------------------------------------------------------------
  *# Accessibility

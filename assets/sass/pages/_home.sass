@@ -94,12 +94,23 @@
         margin: 5px
         border-radius: 8px
 
-        &:not(.-first)
+        @media screen and (prefers-color-scheme: dark)
+            border: 1px solid $main-color
+
+        &:not(.-first),
+        &:not(.-second)
             color: $dark-text
+
+            @media screen and (prefers-color-scheme: dark)
+                color: $main-color
 
         &.-first
             background-color: $dark-text
             color: $main-color
+
+            @media screen and (prefers-color-scheme: dark)
+                background-color: $main-color
+                color: $dark-text
 
             &:after
                 content: ':'
@@ -107,6 +118,10 @@
         &.-second
             background-color: $dark-text
             color: $main-color
+
+            @media screen and (prefers-color-scheme: dark)
+                background-color: $main-color
+                color: $dark-text
             
             &:after
                 content: ':'

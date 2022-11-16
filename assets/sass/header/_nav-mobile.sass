@@ -15,6 +15,9 @@
     @media screen and (max-width: 1023px)
         display: inline-block
 
+    @media screen and (prefers-color-scheme: dark)
+        background-color: rgba($dark-text,0.95)
+
     ul
         padding-left: 0px
         list-style-type: none
@@ -34,6 +37,10 @@
         background: $dark-text
         border-radius: 5px
         cursor: pointer
+        @media screen and (prefers-color-scheme: dark)
+            border-color: $light-main
+            background: $light-main
+
         &:before, &:after
             content: ''
             position: absolute
@@ -42,6 +49,9 @@
             width: 25px
             height: 3px
             background: $light-main
+            @media screen and (prefers-color-scheme: dark)
+                background: $dark-text
+
         &:before
             transform: rotate(45deg)
         &:after
@@ -93,10 +103,14 @@
         a
             padding: 5px 40px 5px 15px
             color: $dark-text
+            @media screen and (prefers-color-scheme: dark)
+                color: $main-color
         > li
             > a
                 color: $dark-text
                 padding-left: 15px
+                @media screen and (prefers-color-scheme: dark)
+                    color: $main-color
 
     &__drop-btn
         width: 30px
