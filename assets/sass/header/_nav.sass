@@ -42,6 +42,11 @@
 						&.current_page_item
 							color: $link-defalt
 							border-bottom-color: $link-defalt
+
+							@media screen and (prefers-color-scheme: dark)
+								color: $link-dark-mode
+								border-bottom-color: $link-dark-mode
+
 						a
 							display: block
 							color: inherit
