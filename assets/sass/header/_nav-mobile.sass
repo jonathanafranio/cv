@@ -135,6 +135,9 @@
             a
                 color: $link-defalt
 
+                @media screen and (prefers-color-scheme: dark)
+                    color: $link-dark-mode
+
 .-is-menu-open
     .menu-nav-mobile
         transform: translateX(0)

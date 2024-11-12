@@ -34,6 +34,8 @@
             width: 100%
         @media screen and (min-width: 1024px)
             width: 15%
+        @media print
+            font-size: 1.6rem
     &__text
         display: inline-block
         @media screen and (min-width: 1024px)
@@ -60,11 +62,18 @@
         font-weight: 600
     h2
         font-size: 2rem
+        @media print
+            font-size: 1.6rem
+
     h3
         font-style: italic
         font-size: 1.8rem
+        @media print
+            font-size: 1.4rem
     h4
         font-size: 1.6rem
+        @media print
+            font-size: 1.3rem
 
 #trabalhos,
 #projetos
@@ -97,6 +106,11 @@
         @media screen and (prefers-color-scheme: dark)
             border: 1px solid $main-color
 
+        @media print
+            font-size: 1.4rem
+            margin: 0
+            margin-bottom: 5px
+
         &:not(.-first),
         &:not(.-second)
             color: $dark-text
@@ -112,8 +126,10 @@
                 background-color: $main-color
                 color: $dark-text
 
-            &:after
-                content: ':'
+            
+            &:not(.-only)
+                &:after
+                    content: ':'
 
         &.-second
             background-color: $dark-text
@@ -125,3 +141,65 @@
             
             &:after
                 content: ':'
+
+
+.section--home__skills
+    margin: 0 auto
+    display: grid
+    @media screen and (max-width: 767px)
+        row-gap: 1.6rem
+
+    @media screen and (min-width: 768px)
+        column-gap: 1.6rem
+        grid-template-columns: repeat(2, 1fr)
+
+    &:not(:last-child)
+        @media screen and (min-width: 768px)
+            border-bottom: 1px solid #ccc
+
+    .two-columns
+        @media screen and (min-width: 768px)
+            grid-column: span 2
+
+    h3
+        font-size: 1.6rem
+        font-weight: bold
+        
+        @media print
+            font-size: 1.4rem
+            padding: 0
+            padding-bottom: 5px
+
+
+/* Títulos das seções
+
+/* Estilo para as listas de habilidades
+
+.skills
+    margin-bottom: 1.5rem
+    display: flex
+    gap: .5rem
+    @media print
+        column-gap: 5px
+        row-gap: 0
+
+.skills__item
+    padding: 0.8rem 1.2rem
+    margin: 0.5rem 0
+    border-radius: 5px
+    font-size: 1.6rem
+
+    @media print
+        padding: 0.25rem 0.5rem
+        font-size: 1.3rem
+        margin: 0
+        margin-bottom: 0.2rem
+
+    &.-first
+        font-weight: bold
+        background-color: $link-defalt
+        color: $light-main
+
+        @media screen and (prefers-color-scheme: dark)
+            background-color: $link-dark-mode
+            color: $dark-text

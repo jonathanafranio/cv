@@ -16,10 +16,10 @@
                         <span class="i-line"></span>
                     </span>
                 </button>
-                <div class="box-logo sm-6 ph-2">
+                <h1 class="box-logo sm-6 ph -2">
                     <a href="https://jonathanafranio.github.io/cv/" rel="home" title="Jonathan Afranio">Jonathan Afranio</a>
                     <span class="box-logo__description">&lt;Dev. Full Stack /&gt;</span>
-                </div>
+                </h1>
                 <ul class="social">
                     <li>
                         <a href="https://www.linkedin.com/in/jonathan-afranio-4b96b039/" target="_blank">
@@ -70,6 +70,7 @@
                                 <li class="menu-item"><a href="#trabalhos">Alguns Trabalhos</a></li>
                                 <li class="menu-item"><a href="#projetos">Projetos</a></li>
                                 <li class="menu-item"><a href="#formacao">Formação</a></li>
+                                <li><a href="Jonathan Afranio – Dev. Full Stack.pdf" target="_blank">PDF</a></li>
                             </ul>
                         </div>
 
@@ -89,6 +90,7 @@
                                 <li class="menu-item"><a href="#trabalhos">Alguns Trabalhos</a></li>
                                 <li class="menu-item"><a href="#projetos">Projetos</a></li>
                                 <li class="menu-item"><a href="#formacao">Formação</a></li>
+                                <li><a href="Jonathan Afranio – Dev. Full Stack.pdf" target="_blank">PDF</a></li>
                             </ul>
                         </div>
 
@@ -133,7 +135,7 @@
         <main id="main" class="site-main" role="main">
             <div class="container">
                 <section class="section--home row" id="sobre">
-                    <h1 class="section--home__h1">Sobre:</h1>
+                    <h2 class="section--home__h1">Sobre:</h2>
                     <div class="section--home__text">
                         <p>Sou programador há 13 anos, brasileiro, em união estável, tenho duas filhas, uma pet e
                             moro na zona Sul de São Paulo.</p>
@@ -141,80 +143,106 @@
                 </section>
 
                 <section class="section--home row" id="qualificacoes">
-                    <h1 class="section--home__h1">Qualificações:</h1>
+                    <h2 class="section--home__h1">Qualificações:</h2>
                     <div class="section--home__text">
-                        <ul class="skills">
-                            <li class="skills__item -first">HTML</li>
-                            <li class="skills__item">HTML 5</li>
-                            <li class="skills__item">Semântica</li>
-                            <li class="skills__item">PUG</li>
-                        </ul>
-                        <ul class="skills">
-                            <li class="skills__item -first">CSS</li>
-                            <li class="skills__item">CSS3</li>
-                            <li class="skills__item">SASS</li>
-                            <li class="skills__item">B.E.M</li>
-                            <li class="skills__item">Bootstrap</li>
-                            <li class="skills__item">Bulma</li>
-                        </ul>
-                        <ul class="skills">
-                            <li class="skills__item -first">JAVASCRIPT</li>
-                            <li class="skills__item">Vanilla.js</li>
-                            <li class="skills__item">ES6^</li>
-                            <li class="skills__item">Vue.js e Vue CLI</li>
-                            <li class="skills__item">Vue-X</li>
-                            <li class="skills__item">Nuxt.js</li>
-                            <li class="skills__item">TypeScript</li>
-                            <li class="skills__item">React</li>
-                            <li class="skills__item">Next.js</li>
-                            <li class="skills__item">Old jquery</li>
-                        </ul>
-                        <ul class="skills">
-                            <li class="skills__item -first">PHP</li>
-                            <li class="skills__item">Laravel</li>
-                        </ul>
-                        <ul class="skills">
-                            <li class="skills__item -first">WordPress</li>
-                            <li class="skills__item">Desenvolvimento de temas e plugins</li>
-                            <li class="skills__item">Custom Post Type</li>
-                            <li class="skills__item">Gutenberg</li>
-                            <li class="skills__item">ACF: (Advanced Custom Fields)</li>
-                            <li class="skills__item">Consulta e atualização base de Dados (WPDB)</li>
-                            <li class="skills__item">WP-JSON (API-REST)</li>
-                            <li class="skills__item">Hooks</li>
-                        </ul>
+                        <div class="section--home__skills">
+                            <div>
+                                <h3>Frontend</h3>
+                                <ul class="skills">
+                                    <li class="skills__item -first">HTML5</li>
+                                    <li class="skills__item">Semântica</li>
+                                    <li class="skills__item"><strong>PUG</strong> - Templates dinâmicos para layouts</li>
+                                    <li class="skills__item"><strong>CSS3</strong> / <strong>Sass</strong> - Desenvolvimento de layouts responsivos e escaláveis</li>
+                                    <li class="skills__item"><strong>BEM</strong> - Metodologia para organização de código CSS</li>
+                                    <li class="skills__item"><strong>Bootstrap</strong> / <strong>Bulma</strong> / <strong>Tailwind</strong> - Frameworks para construção rápida de interfaces</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3>JavaScript</h3>
+                                <ul class="skills">
+                                    <li class="skills__item -first">JavaScript (ES6+ / Vanilla.js / TypeScript)</li>
+                                    <li class="skills__item"><strong>Vue</strong> - Desenvolvimento de SPAs escaláveis</li>
+                                    <li class="skills__item"><strong>Vue-X</strong> - Gerenciamento de estado para aplicações Vue.js</li>
+                                    <li class="skills__item"><strong>Nuxt.js</strong> - Framework para Vue.js com renderização no servidor (SSR)</li>
+                                    <li class="skills__item"><strong>React</strong> - Framework para interfaces dinâmicas e escaláveis</li>
+                                    <li class="skills__item"><strong>Next.js</strong> - Framework para React com renderização no servidor</li>
+                                    <li class="skills__item"><strong>jQuery</strong> - Experiência com manipulação de DOM e plugins antigos em projetos legados</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section--home__skills">
+                            <h3 class="two-columns">Backend (PHP)</h3>
+                            <div>
+                                <ul class="skills">
+                                    <li class="skills__item -first"><strong>Laravel</strong></li>
+                                    <li class="skills__item"><strong>Eloquent ORM</strong> (Models, Query Builder, Tinker)</li>
+                                    <li class="skills__item"><strong>Migrations</strong> & <strong>Seeders</strong> - Criação e população de banco de dados</li>
+                                    <li class="skills__item"><strong>Controllers</strong> - Lógica de negócios</li>
+                                    <li class="skills__item">Definição de Relacionamentos entre Tabelas (<strong>hasOne</strong>, <strong>hasMany</strong>, <strong>belongsToMany</strong>, <strong>belongsTo</strong>...)</li>
+                                    <!--
+                                    <li class="skills__item">Autenticação (JWT, Passport, Laravel Sanctum) - Implementação de sistemas seguros de login</li>
+                                    <li class="skills__item">Autorização (Policies, Gates) - Controle de acesso com base em permissões</li>
+                                    -->
+                                </ul>
+                            </div>                        
+                            <!-- WordPress -->
+                            <div>
+                                <ul class="skills">
+                                    <li class="skills__item -first"><strong>WordPress</strong></li>
+                                    <li class="skills__item">Desenvolvimento de <strong>temas</strong> e <strong>plugins</strong> personalizados</li>
+                                    <li class="skills__item"><strong>Custom Post Type</strong> - Criação de tipos de conteúdo personalizados</li>
+                                    <li class="skills__item"><strong>Gutenberg</strong> - Editor de blocos para criação de páginas dinâmicas</li>
+                                    <li class="skills__item"><strong>ACF</strong> (Advanced Custom Fields) - Personalização de campos para tipos de post</li>
+                                    <li class="skills__item"><strong>WP-JSON</strong> (API-REST) - Integração de dados com APIs externas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section--home__skills">
+                            <div>
+                                <h3>Backend (Node.js)</h3>
+                                <ul class="skills">
+                                    <li class="skills__item -first"><strong>Node.js</strong></li>
+                                    <li class="skills__item"><strong>Express</strong> - Framework para construção de APIs RESTful</li>
+                                    <li class="skills__item"><strong>NPM</strong> / <strong>YARN</strong> - Gerenciadores de pacotes e dependências</li>
+                                    <li class="skills__item"><strong>PM2</strong> - Gerenciamento de processos Node.js em produção</li>
+                                    <li class="skills__item"><strong>Strapi</strong> - CMS headless para criação de APIs robustas</li>
+                                </ul>
+                            </div>
+                        
+                            <!-- Banco de Dados -->
+                            <div>
+                                <h3>Banco de Dados</h3>
+                                <ul class="skills">
+                                    <li class="skills__item -first"><strong>MySQL</strong> - Banco de dados relacional</li>
+                                    <li class="skills__item"><strong>PhpMyAdmin</strong> / <strong>MySQL Workbench</strong> - Ferramenta de administração de MySQL</li>
+                                </ul>
+                            </div>
 
-                        <ul class="skills">
-                            <li class="skills__item -first">Node</li>
-                            <li class="skills__item">NPM</li>
-                            <li class="skills__item">YARN</li>
-                            <li class="skills__item">Express</li>
-                            <li class="skills__item">PM2</li>
-                            <li class="skills__item">Strapi</li>
-                        </ul>
+                        </div>
+                        <div class="section--home__skills">
+                            <div>
+                                <h3>Infraestrutura e Ferramentas</h3>
+                                <ul class="skills">
+                                    <li class="skills__item -first"><strong>Linux</strong></li>
+                                    <li class="skills__item">Terminal (<strong>cd</strong>, <strong>pwd</strong>, <strong>mkdir</strong>, <strong>ls</strong>, <strong>cp</strong>, <strong>mv</strong>, <strong>rm</strong>, <strong>ssh</strong>) - Manipulação de arquivos via linha de comando</li>
+                                </ul>
+                            </div>
 
-                        <ul class="skills">
-                            <li class="skills__item -first">SQL</li>
-                            <li class="skills__item">MySQL</li>
-                            <li class="skills__item">PhpMyAdmin</li>
-                        </ul>
-
-                        <ul class="skills">
-                            <li class="skills__item -first">Versionamento</li>
-                            <li class="skills__item">GIT</li>
-                            <li class="skills__item">SVN</li>
-                        </ul>
-
-                        <ul class="skills">
-                            <li class="skills__item -first">Linux</li>
-                            <li class="skills__item">Terminal (cd, pwd, mkdir, ls, cp, mv, rm)</li>
-                        </ul>
-
+                            <div>
+                                <h3>Versionamento e Controle de Código</h3>
+                                <ul class="skills">
+                                    <li class="skills__item -first -only"><strong>GIT</strong></li>
+                                    <li class="skills__item -first -only"><strong>SVN</strong></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+                    
                 </section>
 
                 <section class="section--home row" id="experiencia">
-                    <h1 class="section--home__h1">Experiência:</h1>
+                    <h2 class="section--home__h1">Experiência:</h2>
                     <div class="section--home__text">
                         <div class="job">
                             <h2>Prumo Tecnologia</h2>
@@ -266,7 +294,7 @@
                 </section>
 
                 <section class="section--home row" id="trabalhos">
-                    <h1 class="section--home__h1">Alguns Trabalhos:</h1>
+                    <h2 class="section--home__h1">Alguns Trabalhos:</h2>
                     <div class="section--home__text">
                         <ul>
                             <li><a href="https://visie.com.br/" target="_blank" rel="nofollow noopener">Visie</a></li>
@@ -285,7 +313,7 @@
 
 
                 <section class="section--home row" id="projetos">
-                    <h1 class="section--home__h1">Projetos:</h1>
+                    <h2 class="section--home__h1">Projetos:</h2>
                     <div class="section--home__text">
                         <ul>
                             <li><a href="http://jonathanafranio.surge.sh/" target="_blank">Lista de Compras com Vue</a></li>
@@ -297,7 +325,7 @@
                 </section>
 
                 <section class="section--home row" id="formacao">
-                    <h1 class="section--home__h1">Formação:</h1>
+                    <h2 class="section--home__h1">Formação:</h2>
                     <div class="section--home__text">
                         <p>Superior incompleto de Comunicação para Web.</p>
                     </div>
