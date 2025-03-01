@@ -99,8 +99,9 @@
                     margin-bottom: 20px
 
                 a   
-                    color: $text-color
-                    font-weight: 600
+                    @media print
+                        color: $text-color
+                        font-weight: 600
                     &::after
                         @media print
                             content: 'Link: ' attr(href)
