@@ -67,7 +67,7 @@ body
 
 	@media screen and (prefers-color-scheme: dark)
 		color: $bg-body
-		background: $text-color
+		background: $bg-body-dark
 		
 	@media print
 		background: $light-main
@@ -272,7 +272,11 @@ button, input, select, textarea
 	line-height: 1.5
 
 p
-	margin-bottom: 1.5rem
+	&:not(.mb-zero)
+		margin-bottom: 1.5rem
+
+.mb-zero
+	margin-bottom: 0px
 
 dfn, cite, em, i
 	font-style: italic

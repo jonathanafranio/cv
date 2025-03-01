@@ -75,6 +75,12 @@
         @media print
             font-size: 1.3rem
 
+    .icon
+        svg
+            width: 1em
+            vertical-align: middle
+
+
 #trabalhos,
 #projetos
     .section--home__text
@@ -84,10 +90,25 @@
             @media screen and (min-width: 1024px)
                 columns: 3
 
+            @media print
+                columns: 2
+
             li
                 @media print
                     display: inline-block
-                    margin-left: 10px
+                    margin-bottom: 20px
+
+                a   
+                    color: $text-color
+                    font-weight: 600
+                    &::after
+                        @media print
+                            content: 'Link: ' attr(href)
+                            display: block
+                            color: $link-defalt
+                            font-weight: 400
+                            
+
 
 
 .skills
@@ -123,9 +144,8 @@
             color: $main-color
 
             @media screen and (prefers-color-scheme: dark)
-                background-color: $main-color
-                color: $dark-text
-
+                background-color: $link-dark-mode
+                color: $dark-text-alt
             
             &:not(.-only)
                 &:after
@@ -202,4 +222,4 @@
 
         @media screen and (prefers-color-scheme: dark)
             background-color: $link-dark-mode
-            color: $dark-text
+            color: $dark-text-alt
