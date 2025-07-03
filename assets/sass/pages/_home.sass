@@ -111,7 +111,40 @@
                             color: $link-defalt
                             font-weight: 400
                             
+.projects
+    &:not(:last-child)
+        margin-bottom: 14px
+        padding-bottom: 14px
+        border-bottom: 1px solid #ccc
 
+    h3
+        margin: 0px
+        padding: 0px
+        font-size: 2rem
+        font-weight: 600
+        
+        @media print
+            font-size: 1.6rem
+
+
+    p
+        margin: 0px
+        padding: 0px
+
+        &:first-of-type
+            font-style: italic
+            font-weight: 600
+            font-size: 1.8rem
+            @media print
+                font-size: 1.4rem
+
+        &:not(:first-of-type)
+            font-size: 1.6rem
+            @media print
+                font-size: 1.3rem
+    a
+        &:hover
+            text-decoration: underline
 
 
 .skills

@@ -47,11 +47,30 @@
 	@media print
 		display: none
 
+	a
+		&:hover
+			text-decoration: underline
+
 #to-up
 	display: inline-block
+	all: unset
 	width: 30px
-	border: none
-	padding: 0px
+	height: 30px
+	color: $link-defalt
+	cursor: pointer
+	will-change: color
+	transition: color 0.3s ease-in-out
+
+	&:hover,
+	&:active
+		color: $text-color
+
+	@media screen and (prefers-color-scheme: dark)
+		color: $link-dark-mode
+
+		&:hover
+			color: $light-text
+
 
 .svg--hide
 	display: none
